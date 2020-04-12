@@ -26,7 +26,6 @@ public class Main {
 
     }
 
-
     public static void changeZeroOne (int[]arr){
         for (int i = 0; i < arr.length ; i++) {
             if( arr[i] == 0 ){
@@ -105,26 +104,26 @@ public class Main {
     }
 
     public static void moveArr(int[]arr7, int n) {
-        int[]arr8 = new int [arr7.length];
+        int[]arr = new int [arr7.length];
         if(n>0) {
             for (int i = 0; i < arr7.length; i++) {
                 if (i + n > arr7.length - 1) {
-                    arr8[i + n - arr7.length] = arr7[i];
+                    arr[i + n - arr7.length] = arr7[i];
                 } else {
-                    arr8[i + n] = arr7[i];
+                    arr[i + n] = arr7[i];
                 }
 
             }
         } if(n<0){
             for(int i = 0; i < arr7.length; i++){
                 if(i+n<0){
-                    arr8[i+n+arr7.length] = arr7[i];
+                    arr[i+n+arr7.length] = arr7[i];
                 } else {
-                    arr8[i + n] = arr7[i];
+                    arr[i + n] = arr7[i];
                 }
             }
         }
-        System.out.println(Arrays.toString(arr8));
+        System.out.println(Arrays.toString(arr));
 
     }
 
